@@ -6,7 +6,7 @@ HandiSpace is a full-stack e-commerce web application for handmade products. It 
 ### **Tech Stack & Architecture**
 -----------------------------------
 * **PHP** and **Laravel Framework** handle the backend logic and database.
-* **JavaScript**, **ReactJS**, and **Tailwind CSS** are used to build the user interface.
+* **JavaScript**, **ReactJS**, and **Bootstrap** are used to build the user interface.
 * **Inertia.js** connects Laravel and React. This helps build the application without a complex REST API system.
 * The system uses **MySQL** for the database and follows the standard **MVC** (Model-View-Controller) pattern.
 
