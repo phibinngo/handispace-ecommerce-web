@@ -1,32 +1,32 @@
-# 🛍️ HandiSpace - Handmade E-Commerce Platform
+# HandiSpace - Handmade E-Commerce Platform
 =================================================
 
-HandiSpace is a comprehensive, full-stack e-commerce web application specifically designed for artisanal and handmade products. Built on a modern monolithic architecture, it leverages the robustness of the **Laravel** framework for the backend and the dynamic reactivity of **ReactJS** for the frontend, delivering a seamless Single Page Application (SPA) experience.
+HandiSpace is a full-stack e-commerce web application for handmade products. It uses the Laravel framework for the backend and ReactJS for the frontend. This combination provides a smooth Single Page Application (SPA) experience for users.
 
-### 📚 **Tech Stack & Architecture**
+### **Tech Stack & Architecture**
 -----------------------------------
-* Nắm vai trò xử lý logic và cơ sở dữ liệu ở Backend là **PHP** và **Laravel Framework**.
-* Giao diện Frontend được xây dựng mượt mà nhờ **JavaScript**, **ReactJS** và **Tailwind CSS**.
-* Sử dụng **Inertia.js** làm cầu nối định tuyến giữa Laravel và React mà không cần xây dựng hệ thống REST API phức tạp.
-* Quản trị cơ sở dữ liệu quan hệ bằng **MySQL** với mô hình kiến trúc **MVC** (Model-View-Controller) chuẩn mực.
+* **PHP** and **Laravel Framework** handle the backend logic and database.
+* **JavaScript**, **ReactJS**, and **Tailwind CSS** are used to build the user interface.
+* **Inertia.js** connects Laravel and React. This helps build the application without a complex REST API system.
+* The system uses **MySQL** for the database and follows the standard **MVC** (Model-View-Controller) pattern.
 
-### ✨ **Key Features**
+### **Key Features**
 -----------------------------------
-* **Storefront:** Hệ thống đăng nhập bảo mật, giỏ hàng real-time, thanh toán (Checkout) hỗ trợ đa địa chỉ và tự động cập nhật hạng thành viên (Loyalty System).
-* **Admin Dashboard:** Bảng điều khiển trực quan thống kê doanh thu, quản lý toàn diện (CRUD) sản phẩm, phân loại danh mục, và xử lý luồng trạng thái đơn hàng.
-* **Database Optimization:** Cơ sở dữ liệu được chuẩn hóa cao với các bảng riêng biệt cho người dùng, địa chỉ, giỏ hàng tạm, đơn hàng và chi tiết sản phẩm để đảm bảo tính toàn vẹn dữ liệu.
+* **Storefront (For Customers):** Secure login, real-time shopping cart, checkout with multiple addresses, and an automatic Loyalty System.
+* **Admin Dashboard:** A clear control panel to track revenue, manage products and categories (CRUD), and update order status.
+* **Database Design:** Clear and organized database tables for users, addresses, temporary carts, orders, and products to keep data safe and accurate.
 
-### 🚀 **Installation & Setup Guide**
+### **Installation & Setup Guide**
 -----------------------------------
-1. Clone mã nguồn (source code) của dự án này về máy thông qua **Git**.
-2. Cài đặt các thư viện PHP cần thiết bằng lệnh `composer install`.
-3. Cài đặt các gói thư viện JavaScript bằng lệnh `npm install`.
-4. Copy file `.env.example` đổi tên thành `.env` và cấu hình tài khoản kết nối **MySQL** của bạn vào đó.
-5. Tạo khóa bảo mật cho ứng dụng bằng lệnh `php artisan key:generate`.
-6. Chạy lệnh `php artisan migrate --seed` để tự động tạo các bảng và dữ liệu mẫu (danh mục, admin, hạng thành viên).
-7. Mở 2 cửa sổ Terminal: Một bên chạy `php artisan serve` (Backend), một bên chạy `npm run dev` (Frontend) để khởi động ứng dụng.
+1. Clone this project to your machine using **Git**.
+2. Install the required PHP packages by running `composer install`.
+3. Install the required JavaScript packages by running `npm install`.
+4. Copy the `.env.example` file, rename it to `.env`, and set up your **MySQL** database information.
+5. Generate the application key by running `php artisan key:generate`.
+6. Run `php artisan migrate --seed` to create database tables and add sample data (categories, admin account, loyalty levels).
+7. Open two terminal windows. Run `php artisan serve` in the first one (Backend) and `npm run dev` in the second one (Frontend).
 
-### 👨‍💻 **Author**
+### **Author**
 -----------------------------------
-* **Ngo Phi Bin** - Fullstack Developer
+* **Ngo Phi Bin**
 * **GitHub:** [@phibinngo](https://github.com/phibinngo)
