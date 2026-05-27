@@ -1,59 +1,32 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🛍️ HandiSpace - Handmade E-Commerce Platform
+=================================================
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+HandiSpace is a comprehensive, full-stack e-commerce web application specifically designed for artisanal and handmade products. Built on a modern monolithic architecture, it leverages the robustness of the **Laravel** framework for the backend and the dynamic reactivity of **ReactJS** for the frontend, delivering a seamless Single Page Application (SPA) experience.
 
-## About Laravel
+### 📚 **Tech Stack & Architecture**
+-----------------------------------
+* Nắm vai trò xử lý logic và cơ sở dữ liệu ở Backend là **PHP** và **Laravel Framework**.
+* Giao diện Frontend được xây dựng mượt mà nhờ **JavaScript**, **ReactJS** và **Tailwind CSS**.
+* Sử dụng **Inertia.js** làm cầu nối định tuyến giữa Laravel và React mà không cần xây dựng hệ thống REST API phức tạp.
+* Quản trị cơ sở dữ liệu quan hệ bằng **MySQL** với mô hình kiến trúc **MVC** (Model-View-Controller) chuẩn mực.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### ✨ **Key Features**
+-----------------------------------
+* **Storefront:** Hệ thống đăng nhập bảo mật, giỏ hàng real-time, thanh toán (Checkout) hỗ trợ đa địa chỉ và tự động cập nhật hạng thành viên (Loyalty System).
+* **Admin Dashboard:** Bảng điều khiển trực quan thống kê doanh thu, quản lý toàn diện (CRUD) sản phẩm, phân loại danh mục, và xử lý luồng trạng thái đơn hàng.
+* **Database Optimization:** Cơ sở dữ liệu được chuẩn hóa cao với các bảng riêng biệt cho người dùng, địa chỉ, giỏ hàng tạm, đơn hàng và chi tiết sản phẩm để đảm bảo tính toàn vẹn dữ liệu.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🚀 **Installation & Setup Guide**
+-----------------------------------
+1. Clone mã nguồn (source code) của dự án này về máy thông qua **Git**.
+2. Cài đặt các thư viện PHP cần thiết bằng lệnh `composer install`.
+3. Cài đặt các gói thư viện JavaScript bằng lệnh `npm install`.
+4. Copy file `.env.example` đổi tên thành `.env` và cấu hình tài khoản kết nối **MySQL** của bạn vào đó.
+5. Tạo khóa bảo mật cho ứng dụng bằng lệnh `php artisan key:generate`.
+6. Chạy lệnh `php artisan migrate --seed` để tự động tạo các bảng và dữ liệu mẫu (danh mục, admin, hạng thành viên).
+7. Mở 2 cửa sổ Terminal: Một bên chạy `php artisan serve` (Backend), một bên chạy `npm run dev` (Frontend) để khởi động ứng dụng.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 👨‍💻 **Author**
+-----------------------------------
+* **Ngo Phi Bin** - Fullstack Developer
+* **GitHub:** [@phibinngo](https://github.com/phibinngo)
